@@ -17,15 +17,16 @@ the class will have isIn function that takes in a string to see if it is
 in the language, set of all even zeroed binary strings. 
 """
 
+
 class Even_lang_checker():
 
 	def __init__(self):
 		self.startState = True
-		self.currentState = True
+		self.currentState = None
 		self.prevState = True
 
 	def isIn(self, string):
-		if set(list(string)) != {"1","0"}:
+		if not set(list(string)).issubset({"1","0"}):
 			return False
 		else:
 			for letter in string:
@@ -42,4 +43,3 @@ checker = Even_lang_checker()
 print(checker.isIn("01010101010100101100"))
 print(checker.isIn("0000000000000000"))
 print(checker.isIn("11111111111"))
-print(set(list("010010010100101010001")))
