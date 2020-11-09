@@ -25,7 +25,7 @@ class Even_lang_checker():
 		self.prevState = True
 
 	def isIn(self, string):
-		if set(list(string)) != {1,0}:
+		if set(list(string)) != {"1","0"}:
 			return False
 		else:
 			for letter in string:
@@ -38,3 +38,8 @@ class Even_lang_checker():
 			else:
 				return False
 
+checker = Even_lang_checker()
+print(checker.isIn("01010101010100101100"))
+print(checker.isIn("0000000000000000"))
+print(checker.isIn("11111111111"))
+print(set(list("010010010100101010001")))
