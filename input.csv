@@ -1,0 +1,9 @@
+states,A,B,C,D
+paths,a, b,,
+initial states,A,,,
+final states,B,C,,
+states,transition if path is a,transition if path is b,,
+A,B,A,,
+B,C,B,,
+C,B,C,,
+D,B,C,,

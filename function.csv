@@ -1,0 +1,7 @@
+state,transition state if path is 0,transition state if path is 1
+A,B,C
+B,A,D
+C,E,F
+D,E,F
+E,E,F
+F,F,F

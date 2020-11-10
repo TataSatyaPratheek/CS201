@@ -1,0 +1,8 @@
+States,A,B,C,D,E,F
+Paths,0,1,,,,
+Initial states,A,,,,,
+Final states,F,,,,,
+States,transition state if path is 0,transition state if path is 1,,,,
+['AB'],B,C,,,,
+['CDE'],E,F,,,,
+['F'],F,F,,,,
